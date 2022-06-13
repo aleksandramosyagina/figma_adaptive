@@ -1,0 +1,480 @@
+@media screen and (min-width: 1024px) {
+    .body {
+        width: 100vw;
+        min-height: 100vh;
+        font-family: 'montserrat', "open sans", Arial, Helvetica, sans-serif;
+    }
+
+    .header_blocks {
+        display: flex;
+        height: 48px;
+        background-color: rgba(57, 49, 132, 1);
+    }
+
+    .block_header,
+    .block_header1 {
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+
+    .block_header1 {
+        margin-left: 100px;
+    }
+
+    .nav {
+        display: flex;
+        align-items: center;
+        height: 72px;
+        background-color: white;
+    }
+
+    .menu {
+        margin-right: 20px;
+        text-decoration: none;
+        color: black;
+    }
+
+    .menu_photo {
+        margin-left: 100px;
+        margin-right: 20px;
+    }
+
+    .section {
+        background-image: url('/Users/aleksandramosyagina/Desktop/itgirlschool/my_projects/10-figma_2/figma_2/src/images/photo.jpg');
+        position: relative;
+        min-height: 642px;
+    }
+
+    .whiteblock {
+        position: absolute;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 80%;
+        margin-top: 600px;
+        margin-left: 10%;
+        padding: 20px 20px 20px 0;
+        background-color: white;
+        border-radius: 10px;
+    }
+
+    .item,
+    .item1 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 60px;
+        margin-left: 20px;
+    }
+
+    .item {
+        border-right: 1px solid gray;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        font-size: smaller;
+    }
+
+    .description1 {
+        margin-bottom: -7px;
+    }
+
+    .squareblock {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 514px;
+        height: 642px;
+        font-size: 24px;
+        text-align: center;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .text1 {
+        margin-top: 0px;
+        margin-bottom: -170px;
+        font-size: 60px;
+        font-weight: 500;
+        color: white;
+    }
+
+    .text2 {
+        width: 400px;
+        margin-bottom: -150px;
+        border-bottom: 1px solid white;
+    }
+
+    .wrap {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text4 {
+        margin-bottom: 15px;
+    }
+
+    .text5 {
+        padding: 15px;
+        border-color: white;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 10px;
+    }
+
+    .button1 {
+        color: white;
+        text-decoration: none;
+    }
+
+    .footer {
+        flex: 0 0 content;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        background-color: rgba(57, 49, 132, 1);
+    }
+
+    .block__footer {
+        width: auto;
+        margin-top: 80px;
+        margin-bottom: 20px;
+        padding: 20px;
+        text-align: center;
+        color: white;
+        background-color: transparent;
+        border: 1px solid white;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .body {
+        display: grid;
+        grid-template-areas:
+            'header'
+            'squareblock'
+            'whiteblock'
+            'footer';
+        grid-template-columns: 100vw;
+        grid-template-rows: 1fr 3fr 1fr 1fr;
+        width: 100vw;
+        height: 1250px;
+        font-family: 'montserrat', "open sans", Arial, Helvetica, sans-serif;
+    }
+
+    .header {
+        grid-area: header;
+    }
+
+    .header_blocks {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        background-color: rgba(57, 49, 132, 1);
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        background-color: white;
+        font-size: 1em;
+    }
+
+    .menu {
+        margin-right: 20px;
+        color: black;
+        text-decoration: none;
+    }
+
+    .section {
+        display: flex;
+        flex-direction: column;
+        background-image: url('/Users/aleksandramosyagina/Desktop/itgirlschool/my_projects/10-figma_2/figma_2/src/images/photo.jpg');
+        width: 100%;
+        height: 350px;
+    }
+
+    .squareblock {
+        grid-area: squareblock;
+        top: 0px;
+        left: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        min-height: 350px;
+        font-size: 24px;
+        text-align: center;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .text4 {
+        margin-bottom: 15px;
+    }
+
+    .text5 {
+        padding: 15px;
+        border-color: white;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 10px;
+    }
+
+    .button1 {
+        color: white;
+        text-decoration: none;
+    }
+
+    .whiteblock {
+        grid-area: whiteblock;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin-left: 10%;
+        padding: 20px 20px 20px 0;
+        background-color: white;
+        border-radius: 10px;
+    }
+
+    .item,
+    .item1 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 60px;
+        margin-left: 20px;
+    }
+
+    .item {
+        border-bottom: 1px solid gray;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-left: 10px;
+        font-size: smaller;
+    }
+
+    .description1 {
+        margin-bottom: -7px;
+    }
+
+    .footer {
+        grid-area: footer;
+        flex: 0 0 content;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        background-color: rgba(57, 49, 132, 1);
+    }
+
+    .block__footer {
+        width: 80%;
+        margin-top: 20px;
+        padding: 20px;
+        text-align: center;
+        color: white;
+        background-color: transparent;
+        border: 1px solid white;
+        border-radius: 10px;
+    }
+
+    .block_footer1 {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width: 1023px) {
+    .body {
+        display: grid;
+        grid-template-areas:
+            'header'
+            'squareblock'
+            'whiteblock'
+            'footer';
+        grid-template-columns: 100vw;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        width: 100vw;
+        height: 700px;
+        font-family: 'montserrat', "open sans", Arial, Helvetica, sans-serif;
+    }
+
+    .header {
+        grid-area: header;
+    }
+
+    .header_blocks {
+        display: flex;
+        height: 48px;
+        background-color: rgba(57, 49, 132, 1);
+    }
+
+    .block_header,
+    .block_header1 {
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+
+    .block_header1 {
+        margin-left: 100px;
+    }
+
+    .nav {
+        display: flex;
+        align-items: center;
+        height: 72px;
+        background-color: white;
+    }
+
+    .menu {
+        margin-right: 15px;
+        color: black;
+        text-decoration: none;
+        font-size: 1.7vw;
+    }
+
+    .menu_photo {
+        margin-left: 40px;
+        margin-right: 20px;
+    }
+
+    .section {
+        background-image: url('/Users/aleksandramosyagina/Desktop/itgirlschool/my_projects/10-figma_2/figma_2/src/images/photo.jpg');
+        position: relative;
+        min-height: 642px;
+    }
+
+
+
+    .squareblock {
+        grid-area: squareblock;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 514px;
+        height: 642px;
+        font-size: 24px;
+        text-align: center;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .text1 {
+        margin-top: 0px;
+        margin-bottom: -170px;
+        font-size: 60px;
+        font-weight: 500;
+        color: white;
+    }
+
+    .text2 {
+        width: 400px;
+        margin-bottom: -150px;
+        border-bottom: 1px solid white;
+    }
+
+    .wrap {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text4 {
+        margin-bottom: 15px;
+    }
+
+    .text5 {
+        padding: 15px;
+        border-color: white;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 10px;
+    }
+
+    .button1 {
+        color: white;
+        text-decoration: none;
+    }
+
+    .whiteblock {
+        grid-area: whiteblock;
+        position: absolute;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        margin-top: 600px;
+        padding: 20px 20px 20px 0;
+        background-color: white;
+    }
+
+    .item,
+    .item1 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 60px;
+        margin-left: 20px;
+    }
+
+    .item {
+        border-right: 1px solid gray;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        font-size: smaller;
+    }
+
+    .description1 {
+        margin-bottom: -7px;
+    }
+
+    .footer {
+        grid-area: footer;
+        flex: 0 0 content;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        background-color: rgba(57, 49, 132, 1);
+        font-size: 2vw;
+    }
+
+    .block__footer {
+        width: auto;
+        margin-top: 80px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        padding: 20px;
+        text-align: center;
+        color: white;
+        background-color: transparent;
+        border: 1px solid white;
+        border-radius: 10px;
+    }
+
+    .block_footer2 {
+        margin-right: 20px;
+    }
+}
