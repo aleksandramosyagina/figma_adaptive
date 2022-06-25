@@ -40,7 +40,7 @@
     }
 
     .section {
-        background-image: url('/Users/aleksandramosyagina/Desktop/itgirlschool/my_projects/10-figma_2/figma_2/src/images/photo.jpg');
+        background-image: url('../images/photo.jpg');
         position: relative;
         min-height: 642px;
     }
